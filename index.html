@@ -36,6 +36,9 @@
         .station-content { position: relative; z-index: 2; color: var(--color-white); }
         h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; font-weight: 900; text-transform: uppercase; }
 
+        /* Listen Live Button */
+        .btn-listen { display: inline-block; padding: 0.8rem 2rem; background-color: var(--color-red); color: white; text-decoration: none; font-weight: 700; border-radius: 8px; margin-top: 1rem; }
+
         /* Scholarship Banner Styles */
         .hero-banner { display: flex; align-items: center; background-color: var(--color-purple); color: var(--color-white); padding: 4rem 5%; gap: 3rem; }
         .hero-image { width: 40%; height: auto; border-radius: 8px; }
@@ -50,6 +53,7 @@
         .history-section { padding: 5rem 5%; border-bottom: 1px solid var(--color-border); }
         .history-container { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 4rem; }
         .history-img { max-width: 100%; border: 8px solid var(--color-red); }
+        .btn-read-more { display: inline-block; padding: 0.8rem 2rem; background-color: var(--color-black); color: white; text-decoration: none; font-weight: 700; border-radius: 8px; margin-top: 1rem; }
         
         @media (max-width: 900px) {
             .hero, .hero-banner { flex-direction: column; text-align: center; }
@@ -78,17 +82,19 @@
         <div class="station-side wgnl-side">
             <div class="station-content">
                 <h1>Oldies, R&B,<br>&amp; The Blues</h1>
+                <a href="#" class="btn-listen">Listen Live WGNL</a>
             </div>
         </div>
         <div class="station-side wgng-side">
             <div class="station-content">
                 <h1>The Delta's Home<br>For Hip Hop</h1>
+                <a href="#" class="btn-listen">Listen Live WGNG</a>
             </div>
         </div>
     </section>
 
     <section class="hero-banner">
-        <img src="rubenhughes.PNG" alt="Ruben C. Hughes Memorial Scholarship" class="hero-image" />
+        <img src="rubenhughes.png" alt="Ruben C. Hughes Memorial Scholarship" class="hero-image" />
         <div class="hero-text">
             <h1>Ruben C. Hughes Memorial Scholarship</h1>
             <p>Empowering African American students to achieve higher education</p>
@@ -104,6 +110,7 @@
             <div class="history-content">
                 <h2 class="section-title">Our Legacy</h2>
                 <p>Discover how WGNL and WGNG became the foundational voices of our community.</p>
+                <a href="#" class="btn-read-more">Read Our History</a>
             </div>
             <img src="bluesmarker.jpg" alt="History" class="history-img">
         </div>
