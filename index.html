@@ -9,13 +9,9 @@
             --color-black: #111111;
             --color-white: #ffffff;
             --color-red: #d32f2f;
-            --color-orange: #ff6600;
             --color-purple: #2e1645;
-            --color-gray-dark: #222222;
-            --color-gray-light: #f9f9f9;
             --color-border: #eeeeee;
             --text-dark: #222222;
-            --text-muted: #666666;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
@@ -40,10 +36,10 @@
         .station-content { position: relative; z-index: 2; color: var(--color-white); }
         h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; font-weight: 900; text-transform: uppercase; }
 
-        /* FIXED SEAMLESS SCHOLARSHIP BANNER */
+        /* Final Seamless Scholarship Banner */
         .scholarship-banner {
             position: relative;
-            background-color: var(--color-purple); /* Ensures purple covers the whole banner */
+            background-color: var(--color-purple);
             background-image: url('rubenhughes.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -57,7 +53,13 @@
             width: 100%;
         }
 
-        .scholarship-content { position: relative; z-index: 2; max-width: 580px; text-align: left; background: transparent !important; }
+        .scholarship-content { 
+            position: relative; 
+            z-index: 2; 
+            max-width: 580px; 
+            text-align: left; 
+            background: transparent !important; 
+        }
         .scholarship-title { font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 0.6rem; }
         .scholarship-tagline { font-size: 1.35rem; margin-bottom: 2rem; }
         .btn-scholarship { padding: 0.75rem 2.2rem; color: var(--color-white); text-decoration: none; font-weight: 700; border: 2px solid rgba(255,255,255,0.6); border-radius: 12px; background-color: rgba(0,0,0,0.15); }
