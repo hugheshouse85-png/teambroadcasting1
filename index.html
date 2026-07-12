@@ -36,33 +36,54 @@
         .station-content { position: relative; z-index: 2; color: var(--color-white); }
         h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; font-weight: 900; text-transform: uppercase; }
 
-        /* Final Seamless Scholarship Banner */
+        /* Scholarship Section */
         .scholarship-banner {
-            position: relative;
             background-color: var(--color-purple);
-            background-image: url('rubenhughes.PNG');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right center;
-            padding: 6rem 10%;
-            color: var(--color-white);
+            padding: 4rem 5%;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            min-height: 380px;
-            width: 100%;
+            justify-content: space-between;
+            min-height: 350px;
         }
 
         .scholarship-content { 
-            position: relative; 
-            z-index: 2; 
-            max-width: 580px; 
-            text-align: left; 
-            background: transparent !important; 
+            flex: 1;
+            padding-right: 3rem;
         }
-        .scholarship-title { font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 0.6rem; }
-        .scholarship-tagline { font-size: 1.35rem; margin-bottom: 2rem; }
-        .btn-scholarship { padding: 0.75rem 2.2rem; color: var(--color-white); text-decoration: none; font-weight: 700; border: 2px solid rgba(255,255,255,0.6); border-radius: 12px; background-color: rgba(0,0,0,0.15); }
+
+        .scholarship-title { 
+            font-size: 2.8rem; 
+            font-weight: 800; 
+            color: var(--color-white);
+            line-height: 1.1; 
+            margin-bottom: 0.6rem; 
+        }
+
+        .scholarship-tagline { 
+            font-size: 1.35rem; 
+            color: var(--color-white);
+            margin-bottom: 2rem; 
+        }
+
+        .btn-scholarship { 
+            display: inline-block;
+            padding: 0.75rem 2.2rem; 
+            color: var(--color-white); 
+            text-decoration: none; 
+            font-weight: 700; 
+            border: 2px solid rgba(255,255,255,0.6); 
+            border-radius: 12px; 
+            background-color: rgba(0,0,0,0.15); 
+        }
+
+        .scholarship-image {
+            width: 320px;
+            height: 320px;
+            background-image: url('rubenhughes.PNG');
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
 
         /* History */
         .history-section { padding: 5rem 5%; border-bottom: 1px solid var(--color-border); }
@@ -71,7 +92,8 @@
         
         @media (max-width: 900px) {
             .hero { flex-direction: column; }
-            .scholarship-banner { justify-content: center; text-align: center; background-size: cover; }
+            .scholarship-banner { flex-direction: column; text-align: center; }
+            .scholarship-content { padding-right: 0; margin-bottom: 2rem; }
             .history-container { flex-direction: column-reverse; }
         }
     </style>
@@ -111,6 +133,7 @@
             <p class="scholarship-tagline">Elevating higher education for African Americans!</p>
             <a href="#" class="btn-scholarship">Click for Learn More</a>
         </div>
+        <div class="scholarship-image"></div>
     </section>
 
     <section class="history-section">
