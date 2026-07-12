@@ -39,22 +39,22 @@
         .wgng-side { background-image: url('wgng-bg.PNG'); border-left: 4px solid var(--color-black); }
         .station-content { position: relative; z-index: 2; color: var(--color-white); }
         h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; font-weight: 900; text-transform: uppercase; }
-        .tagline { font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 480px; opacity: 0.9; }
 
-        /* Scholarship Banner - UPDATED FOR FLIPPED IMAGE */
+        /* FIXED SEAMLESS SCHOLARSHIP BANNER */
         .scholarship-banner {
             position: relative;
-            background-color: var(--color-purple);
+            background-color: var(--color-purple); /* Ensures purple covers the whole banner */
             background-image: url('rubenhughes.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: right center; /* Flipped to right */
+            background-position: right center;
             padding: 6rem 10%;
             color: var(--color-white);
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Aligned text to the left */
+            justify-content: flex-start;
             min-height: 380px;
+            width: 100%;
         }
 
         .scholarship-content { position: relative; z-index: 2; max-width: 580px; text-align: left; background: transparent !important; }
