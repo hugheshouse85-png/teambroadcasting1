@@ -36,54 +36,15 @@
         .station-content { position: relative; z-index: 2; color: var(--color-white); }
         h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 1rem; font-weight: 900; text-transform: uppercase; }
 
-        /* Scholarship Section */
-        .scholarship-banner {
-            background-color: var(--color-purple);
-            padding: 4rem 5%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 350px;
-        }
-
-        .scholarship-content { 
-            flex: 1;
-            padding-right: 3rem;
-        }
-
-        .scholarship-title { 
-            font-size: 2.8rem; 
-            font-weight: 800; 
-            color: var(--color-white);
-            line-height: 1.1; 
-            margin-bottom: 0.6rem; 
-        }
-
-        .scholarship-tagline { 
-            font-size: 1.35rem; 
-            color: var(--color-white);
-            margin-bottom: 2rem; 
-        }
-
-        .btn-scholarship { 
-            display: inline-block;
-            padding: 0.75rem 2.2rem; 
-            color: var(--color-white); 
-            text-decoration: none; 
-            font-weight: 700; 
-            border: 2px solid rgba(255,255,255,0.6); 
-            border-radius: 12px; 
-            background-color: rgba(0,0,0,0.15); 
-        }
-
-        .scholarship-image {
-            width: 320px;
-            height: 320px;
-            background-image: url('rubenhughes.PNG');
-            background-size: cover;
-            background-position: center;
-            flex-shrink: 0;
-        }
+        /* NEW Scholarship Banner Styles */
+        .hero-banner { display: flex; align-items: center; background-color: var(--color-purple); color: var(--color-white); padding: 4rem 5%; gap: 3rem; }
+        .hero-image { width: 40%; height: auto; border-radius: 8px; }
+        .hero-text h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+        .hero-text p { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9; }
+        .hero-buttons { display: flex; gap: 1rem; }
+        .btn-primary, .btn-secondary { padding: 0.8rem 2rem; text-decoration: none; font-weight: 700; border-radius: 8px; }
+        .btn-primary { background-color: var(--color-red); color: white; }
+        .btn-secondary { background-color: transparent; border: 2px solid white; color: white; }
 
         /* History */
         .history-section { padding: 5rem 5%; border-bottom: 1px solid var(--color-border); }
@@ -91,9 +52,8 @@
         .history-img { max-width: 100%; border: 8px solid var(--color-red); }
         
         @media (max-width: 900px) {
-            .hero { flex-direction: column; }
-            .scholarship-banner { flex-direction: column; text-align: center; }
-            .scholarship-content { padding-right: 0; margin-bottom: 2rem; }
+            .hero, .hero-banner { flex-direction: column; text-align: center; }
+            .hero-image { width: 100%; }
             .history-container { flex-direction: column-reverse; }
         }
     </style>
@@ -127,13 +87,16 @@
         </div>
     </section>
 
-    <section class="scholarship-banner">
-        <div class="scholarship-content">
-            <h2 class="scholarship-title">Ruben C. Hughes<br>Memorial Scholarship</h2>
-            <p class="scholarship-tagline">Elevating higher education for African Americans!</p>
-            <a href="#" class="btn-scholarship">Click for Learn More</a>
+    <section class="hero-banner">
+        <img src="banner.webp" alt="Ruben C. Hughes Memorial Scholarship" class="hero-image" />
+        <div class="hero-text">
+            <h1>Ruben C. Hughes Memorial Scholarship</h1>
+            <p>Empowering African American students to achieve higher education</p>
+            <div class="hero-buttons">
+                <a href="#apply" class="btn-primary">Apply Now</a>
+                <a href="#learn" class="btn-secondary">Learn More</a>
+            </div>
         </div>
-        <div class="scholarship-image"></div>
     </section>
 
     <section class="history-section">
